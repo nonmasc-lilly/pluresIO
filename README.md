@@ -6,9 +6,9 @@ A simple example program for reference
 #include "io.h"
 
 int main() {
-  START;
-  DESC _in = GETSTDIN,
-       _out = GETSTDOUT;
+  SETUP;
+  DESC _in = GETSTDIN;
+  DESC _out = GETSTDOUT;
   wts("Hello World! [tab to exit]\n", _out);
   int _break = 0;
   while(!_break) {
